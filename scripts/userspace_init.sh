@@ -23,8 +23,6 @@
 # The steps above should result in a minimal install without a DE/WM. 
 # We should then be able to launch this script from the user's home directory.
 #
-# TODO: upload dotfiles and retrieve + use them in this script.
-#
 
 ########## setup some common directories ##########
 
@@ -79,14 +77,6 @@ cd pwndbg
 
 cd ~
 
-########## TODO: setup minimal X ##########
-
-# wget .xinitrc
-# mv .xinitrc ~/
-
-touch .xinitrc # TODO: export dotfile
-printf '#!/bin/bash\n\n. /etc/X11/xinit/xinitrc-common\nexec qtile start\n' > .xinitrc
-
 ########## install jetbrains mono font ##########
 
 cd /tmp
@@ -104,18 +94,18 @@ sudo fc-cache -v
 
 cd ~
 
-########### TODO: configure kitty ###########
+########## retrieve personal dotfiles ##########
 
-# wget kitty.conf
-# mv kitty.conf ~/.config/kitty/
+mkdir Desktop/Scripts
+cd Desktop/Scripts
 
-########### TODO: configure micro ###########
+git clone https://github.com/Milo-D/dotfiles.git
 
-# wget settings.json
-# mv settings.json ~/.config/micro/
+cp dotfiles/config/.bash_profile ~/
+cp dotfiles/config/.bashrc ~/
+cp dotfiles/config/.xinitrc ~/
 
-########### TODO: autostart X ##########
+cp dotfiles/config/kitty.conf ~/.config/kitty/
+cp dotfiles/config/settings.json ~/.config/micro/
 
-# TODO: export dotfile
-# autostart X by appending following line to the user's .bash_profile
-# [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1
+cd ~
