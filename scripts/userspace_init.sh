@@ -105,6 +105,7 @@ cp dotfiles/config/.bash_profile ~/
 cp dotfiles/config/.bashrc ~/
 cp dotfiles/config/.xinitrc ~/
 
+cp dotfiles/config/config.py ~/.config/qtile/
 cp dotfiles/config/kitty.conf ~/.config/kitty/
 cp dotfiles/config/settings.json ~/.config/micro/
 
