@@ -49,24 +49,33 @@ sudo dnf install kitty
 sudo dnf install firefox
 sudo dnf install nitrogen
 sudo dnf install zip
+sudo dnf install tar
 sudo dnf install bat
 sudo dnf install micro
 sudo dnf install picom
 sudo dnf install screenfetch
 sudo dnf install wget
 sudo dnf install git
+sudo dnf install git-email
 sudo dnf install xrandr
 sudo dnf install ranger
+sudo dnf install xclip
+sudo dnf install xsel
+sudo dnf install qemu
 
 ########## install packages (software development) ##########
 
 sudo dnf install gcc
 sudo dnf install gdb
+sudo dnf install cmake
 
 ########## install packages (security research) ##########
 
 sudo dnf install patchelf
 sudo dnf install radare2
+sudo dnf install binwalk
+
+pip install ropper
 
 mkdir Desktop/Repositories
 cd Desktop/Repositories
