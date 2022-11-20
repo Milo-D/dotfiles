@@ -74,6 +74,7 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show run"), desc="Spawn a command using a prompt widget"),
+    Key([mod], "s", lazy.spawn("i3lock-fancy"), desc="Lock the screen with i3lock-fancy")
 ]
 
 groups = [Group(i) for i in "123456789"]

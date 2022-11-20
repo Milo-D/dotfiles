@@ -59,6 +59,7 @@ sudo dnf install git-email
 sudo dnf install ranger
 sudo dnf install qemu
 sudo dnf install tree
+sudo dnf install ImageMagick
 
 ########## install packages (window-manager stuff) ##########
 
@@ -68,6 +69,7 @@ sudo dnf install xsel
 sudo dnf install xrandr
 sudo dnf install polybar
 sudo dnf install rofi
+sudo dnf install i3lock
 
 ########## install packages (software development) ##########
 
@@ -108,6 +110,15 @@ sudo restorecon -RF /usr/local/share/fonts/jetbrains
 sudo fc-cache -v
 
 cd ~
+
+########## setup screenlocker ##########
+
+git clone https://github.com/meskarune/i3lock-fancy.git
+
+sudo install -Dm755 i3lock-fancy/i3lock-fancy -t /usr/bin/
+sudo install -Dm644 i3lock-fancy/icons/* -t /usr/share/i3lock-fancy/icons/
+
+rm -rf i3lock-fancy/
 
 ########## retrieve personal dotfiles ##########
 
