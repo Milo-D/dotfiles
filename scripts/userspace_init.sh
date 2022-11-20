@@ -52,16 +52,22 @@ sudo dnf install zip
 sudo dnf install tar
 sudo dnf install bat
 sudo dnf install micro
-sudo dnf install picom
 sudo dnf install screenfetch
 sudo dnf install wget
 sudo dnf install git
 sudo dnf install git-email
-sudo dnf install xrandr
 sudo dnf install ranger
+sudo dnf install qemu
+sudo dnf install tree
+
+########## install packages (window-manager stuff) ##########
+
+sudo dnf install picom
 sudo dnf install xclip
 sudo dnf install xsel
-sudo dnf install qemu
+sudo dnf install xrandr
+sudo dnf install polybar
+sudo dnf install rofi
 
 ########## install packages (software development) ##########
 
@@ -114,8 +120,9 @@ cp dotfiles/config/.bash_profile ~/
 cp dotfiles/config/.bashrc ~/
 cp dotfiles/config/.xinitrc ~/
 
-mkdir -p ~/.config/qtile/ && cp dotfiles/config/config.py $_
-mkdir -p ~/.config/kitty/ && cp dotfiles/config/kitty.conf $_
-mkdir -p ~/.config/micro/ && cp dotfiles/config/settings.json $_
+cp -r dotfiles/config/qtile/ ~/.config/
+cp -r dotfiles/config/kitty/ ~/.config/
+cp -r dotfiles/config/micro/ ~/.config/
+cp -r dotfiles/config/polybar/ ~/.config/
 
 cd ~
