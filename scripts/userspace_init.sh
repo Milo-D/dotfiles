@@ -10,7 +10,7 @@
 #
 #   - installs required packages in order to setup the window manager
 #   - installs and configures qtile window manager
-#   - installs some additional, common software (vim, firefox, ...)
+#   - installs some additional, common software (editor, browser, ...)
 #
 # === requirements ===
 #
@@ -43,10 +43,9 @@ pip install qtile
 
 ########## install packages (core utilities) ##########
 
-sudo dnf install vim
 sudo dnf install htop
 sudo dnf install kitty
-sudo dnf install firefox
+sudo dnf install qutebrowser
 sudo dnf install nitrogen
 sudo dnf install zip
 sudo dnf install tar
