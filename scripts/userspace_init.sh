@@ -134,5 +134,6 @@ cp -r dotfiles/config/qtile/ ~/.config/
 cp -r dotfiles/config/kitty/ ~/.config/
 cp -r dotfiles/config/micro/ ~/.config/
 cp -r dotfiles/config/polybar/ ~/.config/
+cp -r dotfiles/config/qutebrowser/ ~/.config/
 
 cd ~
