@@ -82,6 +82,12 @@ unbind('<shift-l>',              'normal');
 bind(  '<alt-left>',  'back',    'normal');
 bind(  '<alt-right>', 'forward', 'normal');
 
+#
+# page refresh
+#
+unbind('r',                  'normal');
+bind(  '<ctrl-r>', 'reload', 'normal');
+
 #### qutebrowser theme ####
 
 #
