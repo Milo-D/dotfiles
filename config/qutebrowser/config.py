@@ -52,6 +52,14 @@ c.url.default_page = 'https://www.google.com/';
 c.url.start_pages  = [ c.url.default_page ];
 
 #
+# search engines
+#
+c.url.searchengines = {
+
+    'DEFAULT': 'https://google.com/search?hl=en&q={}'
+};
+
+#
 # misc
 #
 c.downloads.location.directory = '~/Downloads/';
@@ -87,6 +95,17 @@ bind(  '<alt-right>', 'forward', 'normal');
 #
 unbind('r',                  'normal');
 bind(  '<ctrl-r>', 'reload', 'normal');
+
+#
+# open url prompt
+#
+unbind('o',                                      'normal');
+bind(  '<ctrl-l>', 'set-cmd-text --space :open', 'normal');
+
+#
+# private browsing
+#
+bind('<ctrl-shift-p>', 'open -p', 'normal');
 
 #### qutebrowser theme ####
 
