@@ -38,8 +38,7 @@ def unbind(key, mode):
 #
 # appearance
 #
-# c.fonts.tabs  = "JetBrains Mono Bold";
-# c.fonts.hints = "JetBrains Mono Bold";
+c.fonts.default_family = "Jetbrains Mono";
 
 #
 # hints

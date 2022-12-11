@@ -9,7 +9,7 @@
 
 bg_default = "#282c34"          # main shade darkest
 bg_lighter = "#353b45"
-bg_selection = "#3e4451"
+bg_selection = "#055596"        # previously: "#3e4451"
 # "#545862"
 fg_disabled = "#565c64"
 fg_default = "#abb2bf"
