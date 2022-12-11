@@ -75,6 +75,7 @@ sudo dnf install i3lock
 sudo dnf install gcc
 sudo dnf install gdb
 sudo dnf install cmake
+sudo dnf install ncurses-devel
 
 ########## install packages (security research) ##########
 
