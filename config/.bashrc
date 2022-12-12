@@ -27,3 +27,4 @@ fi
 unset rc
 
 export EDITOR=micro
+export BAT_THEME="Nord"
