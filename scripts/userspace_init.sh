@@ -120,12 +120,14 @@ sudo install -Dm644 i3lock-fancy/icons/* -t /usr/share/i3lock-fancy/icons/
 
 rm -rf i3lock-fancy/
 
-########## retrieve personal dotfiles ##########
+########## retrieve personal dotfiles, etc. ##########
 
 mkdir Desktop/Scripts
 cd Desktop/Scripts
 
 git clone https://github.com/Milo-D/dotfiles.git
+
+cp -r dotfiles/Wallpapers/ ~/Pictures/
 
 cp dotfiles/config/.bash_profile ~/
 cp dotfiles/config/.bashrc ~/
