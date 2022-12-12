@@ -1,0 +1,33 @@
+# === custom, nord-oriented colorscheme for micro === 
+
+#### micro components ####
+
+#                                                # foreground   # background
+################################################################################
+color-link default             "#D8DEE9,"        # snowstorm-0    transparent
+color-link statusline          "#5E81AC,#2E3440" # frost-3        polarnight-0
+color-link tabbar              "#5E81AC,#2E3440" # frost-3        polarnight-0
+color-link line-number         "#4C566A,"        # polarnight-3   transparent
+color-link gutter-error        "#BF616A,"        # aurora-0       transparent
+color-link gutter-warning      "#EBCB8B,"        # aurora-2       transparent
+color-link diff-added          "#5E81AC,"        # frost-3        transparent
+color-link diff-modified       "#EBCB8B,"        # aurora-2       transparent
+color-link diff-deleted        "#BF616A,"        # aurora-0       transparent
+color-link current-line-number "#5E81AC,"        # frost-3        transparent
+color-link divider             "#2E3440,#5E81AC" # polarnight-0   frost-3
+color-link message             "#4C566A,"        # polarnight-3   transparent
+color-link error-message       "#2E3440,#BF616A" # polarnight-0   aurora-0
+
+#### syntax highlighting ####
+
+#                                                # foreground   # background
+################################################################################
+color-link comment             "#4C566A,"        # polarnight-3   transparent 
+color-link identifier          "#5E81AC,"        # frost-3        transparent
+color-link constant            "#A3BE8C,"        # aurora-3       transparent
+color-link statement           "#88C0D0,"        # frost-1        transparent
+color-link symbol              "#5E81AC,"        # frost-3        transparent
+color-link preproc             "#BF616A,"        # aurora-0       transparent
+color-link type                "#5E81AC,"        # frost-3        transparent
+color-link error               "#BF616A,"        # aurora-0       transparent
+color-link todo                "#A3BE8C,"        # aurora-3       transparent
