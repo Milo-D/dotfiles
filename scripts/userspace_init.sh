@@ -43,7 +43,7 @@ pip install qtile
 
 ########## install packages (core utilities) ##########
 
-sudo dnf install htop
+sudo dnf install btop
 sudo dnf install kitty
 sudo dnf install qutebrowser
 sudo dnf install nitrogen
@@ -139,5 +139,6 @@ cp -r dotfiles/config/micro/ ~/.config/
 cp -r dotfiles/config/polybar/ ~/.config/
 cp -r dotfiles/config/qutebrowser/ ~/.config/
 cp -r dotfiles/config/rofi/ ~/.config/
+cp -r dotfiles/config/btop/ ~/.config/
 
 cd ~
