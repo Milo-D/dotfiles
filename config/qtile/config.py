@@ -32,7 +32,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
-mod = "mod4"
+mod      = "mod4"
 terminal = guess_terminal()
 
 keys = [
@@ -108,7 +108,8 @@ layouts = [
     layout.Columns(border_focus_stack = [ "#88c0d0", "#88c0d0" ],
                    border_normal      = [ "#3b4252", "#3b4252" ],
                    border_focus       = [ "#88c0d0", "#88c0d0" ],
-                   border_width       = 4),
+                   border_width       = 4,
+                   margin             = 8),
     
     layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -182,10 +183,9 @@ wl_input_rules = None
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
 
-########## autostart ##########
+########## custom hooks ##########
 
 @hook.subscribe.startup_once
 def autostart():
-
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.run([home])

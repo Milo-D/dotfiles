@@ -50,7 +50,7 @@ sudo dnf install nitrogen
 sudo dnf install zip
 sudo dnf install tar
 sudo dnf install bat
-sudo dnf install micro
+sudo dnf install nvim
 sudo dnf install screenfetch
 sudo dnf install wget
 sudo dnf install git
@@ -94,6 +94,10 @@ cd pwndbg
 
 cd ~
 
+########## install vim plugin manager ########## 
+
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 ########## install jetbrains mono font ##########
 
 cd /tmp
@@ -135,10 +139,16 @@ cp dotfiles/config/.xinitrc ~/
 
 cp -r dotfiles/config/qtile/ ~/.config/
 cp -r dotfiles/config/kitty/ ~/.config/
-cp -r dotfiles/config/micro/ ~/.config/
+cp -r dotfiles/config/nvim/ ~/.config/
 cp -r dotfiles/config/polybar/ ~/.config/
 cp -r dotfiles/config/qutebrowser/ ~/.config/
 cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
 
 cd ~
+
+####### Final Notes #######
+#
+# - run ":PlugUpdate" within neovim in order to load all plugins
+#
+#
