@@ -50,7 +50,7 @@ sudo dnf install nitrogen
 sudo dnf install zip
 sudo dnf install tar
 sudo dnf install bat
-sudo dnf install nvim
+sudo dnf install neovim
 sudo dnf install screenfetch
 sudo dnf install wget
 sudo dnf install git
