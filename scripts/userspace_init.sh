@@ -115,6 +115,10 @@ sudo fc-cache -v
 
 cd ~
 
+########## setup custom logon ##########
+
+sudo cp dotfiles/misc/issue /etc/
+
 ########## setup screenlocker ##########
 
 git clone https://github.com/meskarune/i3lock-fancy.git
