@@ -26,5 +26,5 @@ fi
 
 unset rc
 
-export EDITOR=micro
+export EDITOR=nvim
 export BAT_THEME="Nord"
