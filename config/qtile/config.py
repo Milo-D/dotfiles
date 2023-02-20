@@ -32,8 +32,11 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
-mod      = "mod4"
-terminal = guess_terminal()
+env_user     = os.environ.get('USER');
+env_hostname = os.environ.get('HOSTNAME');
+
+mod      = "mod4";
+terminal = guess_terminal();
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -74,7 +77,7 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show run"), desc="Spawn a command using a prompt widget"),
-    Key([mod], "s", lazy.spawn("i3lock-fancy"), desc="Lock the screen with i3lock-fancy")
+    Key([mod], "s", lazy.spawn("i3lock-fancy -p -f JetBrains-Mono-Bold -t " + env_user + "@" + env_hostname), desc="Lock the screen")
 ]
 
 groups = [Group(i) for i in "123456789"]
