@@ -27,6 +27,8 @@
 ########## setup some common directories ##########
 
 mkdir Desktop
+mkdir Desktop/Repositories
+
 mkdir Pictures
 mkdir Documents
 mkdir Downloads
@@ -80,17 +82,18 @@ sudo dnf install ncurses-devel
 ########## install packages (security research) ##########
 
 sudo dnf install patchelf
-sudo dnf install radare2
 sudo dnf install binwalk
 
 pip install ropper
 
-mkdir Desktop/Repositories
-cd Desktop/Repositories
-
+cd ~/Desktop/Repositories/
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
+
+cd ~/Desktop/Repositories/
+git clone https://github.com/radareorg/radare2
+radare2/sys/install.sh
 
 cd ~
 
