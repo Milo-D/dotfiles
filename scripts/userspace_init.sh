@@ -28,6 +28,7 @@
 
 mkdir Desktop
 mkdir Desktop/Repositories
+mkdir Desktop/Scripts
 
 mkdir Pictures
 mkdir Documents
@@ -134,9 +135,7 @@ rm -rf i3lock-fancy/
 
 ########## retrieve personal dotfiles, etc. ##########
 
-mkdir Desktop/Scripts
 cd Desktop/Scripts
-
 git clone https://github.com/Milo-D/dotfiles.git
 
 cp -r dotfiles/Wallpapers/ ~/Pictures/
