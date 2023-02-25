@@ -120,10 +120,6 @@ sudo fc-cache -v
 
 cd ~
 
-########## setup custom logon ##########
-
-sudo cp dotfiles/misc/issue /etc/
-
 ########## setup screenlocker ##########
 
 git clone https://github.com/meskarune/i3lock-fancy.git
@@ -138,6 +134,7 @@ rm -rf i3lock-fancy/
 cd Desktop/Scripts
 git clone https://github.com/Milo-D/dotfiles.git
 
+sudo cp dotfiles/misc/issue /etc/
 cp -r dotfiles/Wallpapers/ ~/Pictures/
 
 cp dotfiles/config/.bash_profile ~/
