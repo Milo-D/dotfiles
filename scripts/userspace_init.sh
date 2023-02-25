@@ -71,6 +71,7 @@ sudo dnf install xrandr
 sudo dnf install polybar
 sudo dnf install rofi
 sudo dnf install i3lock
+sudo dnf install brightnessctl
 
 ########## install packages (software development) ##########
 
