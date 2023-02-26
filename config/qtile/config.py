@@ -44,7 +44,7 @@ app_launcher = "rofi -show run";
 screenlocker = "i3lock-fancy -p -f JetBrains-Mono-Bold -t " + env_user + "@" + env_hostname;
 
 wmname       = "LG3D";
-groups       = [Group(i) for i in "123456789"];
+groups       = [Group(i) for i in "12345"];
 
 #### wm hotkeys (general) ####
 
