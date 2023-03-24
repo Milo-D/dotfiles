@@ -89,8 +89,9 @@ for i in groups:
 
 keys.extend([
 
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl -d intel_backlight s 50-"), desc="Decrease screen brightness"),
-    Key([], "XF86MonBrightnessUp",   lazy.spawn("brightnessctl -d intel_backlight s +50"), desc="Increase screen brightness")
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl -d intel_backlight s 50-"),               desc="Decrease screen brightness"),
+    Key([], "XF86MonBrightnessUp",   lazy.spawn("brightnessctl -d intel_backlight s +50"),               desc="Increase screen brightness"),
+    Key([], "XF86Display",           lazy.spawn(os.path.expanduser("~/.config/qtile/screen_toggle.sh")), desc="Toggle display output"),
 ]);
 
 #### wm layouts ####

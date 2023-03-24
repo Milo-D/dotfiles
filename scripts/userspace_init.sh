@@ -149,8 +149,6 @@ cp -r dotfiles/config/qutebrowser/ ~/.config/
 cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
 
-cp dotfiles/scripts/screen_toggle.sh ~/.config/qtile/
-
 cd ~
 
 ####### Final Notes #######
