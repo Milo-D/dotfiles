@@ -46,6 +46,28 @@ screenlocker = "i3lock-fancy -p -f JetBrains-Mono-Bold -t " + env_user + "@" + e
 wmname       = "LG3D";
 groups       = [Group(i) for i in "12345"];
 
+widget_defaults    = dict(font="sans", fontsize=12, padding=3);
+extension_defaults = widget_defaults.copy();
+
+dgroups_key_binder = None;
+dgroups_app_rules  = [];
+follow_mouse_focus = True;
+bring_front_click  = False;
+cursor_warp        = False;
+
+auto_fullscreen            = True;
+focus_on_window_activation = "smart";
+reconfigure_screens        = True;
+auto_minimize              = True;
+wl_input_rules             = None;
+
+#### wm screens ####
+
+screens = [
+
+    Screen()
+];
+
 #### wm hotkeys (general) ####
 
 keys = [
@@ -84,7 +106,6 @@ for i in groups:
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True), desc="Switch to & move focused window to group {}".format(i.name)),
     ]);
 
-
 #### wm hotkeys (function keys) ####
 
 keys.extend([
@@ -93,6 +114,15 @@ keys.extend([
     Key([], "XF86MonBrightnessUp",   lazy.spawn("brightnessctl -d intel_backlight s +50"),               desc="Increase screen brightness"),
     Key([], "XF86Display",           lazy.spawn(os.path.expanduser("~/.config/qtile/screen_toggle.sh")), desc="Toggle display output"),
 ]);
+
+#### wm hotkeys (mouse) ####
+
+mouse = [
+
+    Drag ([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
+    Drag ([mod], "Button3", lazy.window.set_size_floating(),     start=lazy.window.get_size()),
+    Click([mod], "Button2", lazy.window.bring_to_front())
+];
 
 #### wm layouts ####
 
@@ -119,28 +149,6 @@ layouts = [
     # layout.Zoomy(),
 ];
 
-widget_defaults    = dict(font="sans", fontsize=12, padding=3);
-extension_defaults = widget_defaults.copy();
-
-screens = [
-
-    Screen()
-];
-
-# Drag floating layouts.
-mouse = [
-
-    Drag ([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag ([mod], "Button3", lazy.window.set_size_floating(),     start=lazy.window.get_size()),
-    Click([mod], "Button2", lazy.window.bring_to_front())
-];
-
-dgroups_key_binder = None;
-dgroups_app_rules  = [];
-follow_mouse_focus = True;
-bring_front_click  = False;
-cursor_warp        = False;
-
 floating_layout = layout.Floating(float_rules=[
 
         # Run the utility of `xprop` to see the wm class and name of an X client.
@@ -153,12 +161,6 @@ floating_layout = layout.Floating(float_rules=[
         Match(title="pinentry")               # GPG key password entry
     ]
 );
-
-auto_fullscreen            = True;
-focus_on_window_activation = "smart";
-reconfigure_screens        = True;
-auto_minimize              = True;
-wl_input_rules             = None;
 
 #### custom hooks ####
 
