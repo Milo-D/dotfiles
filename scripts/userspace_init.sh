@@ -145,6 +145,7 @@ cp -r dotfiles/config/polybar/ ~/.config/
 cp -r dotfiles/config/qutebrowser/ ~/.config/
 cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
+cp -r dotfiles/config/picom/ ~/.config/
 
 cd ~
 
