@@ -109,11 +109,15 @@ c.colors.downloads.system.bg = 'none'
 ## Background color for hints. Note that you can use a `rgba(...)` value
 ## for transparency.
 ## Type: QssColor
-c.colors.hints.bg = nord['nord13']
+c.colors.hints.bg = nord['nord3']
 
 ## Font color for hints.
 ## Type: QssColor
-c.colors.hints.fg = nord['nord0']
+c.colors.hints.fg = nord['nord5']
+
+## Color of hint border
+## Type QssColor
+c.hints.border = "1px solid " + nord['nord13']
 
 ## Font color for the matched part of hints.
 ## Type: QssColor
