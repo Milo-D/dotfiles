@@ -137,6 +137,7 @@ cp -r dotfiles/Wallpapers/ ~/Pictures/
 cp dotfiles/config/.bash_profile ~/
 cp dotfiles/config/.bashrc ~/
 cp dotfiles/config/.xinitrc ~/
+cp dotfiles/config/.rizinrc ~/
 
 cp -r dotfiles/config/qtile/ ~/.config/
 cp -r dotfiles/config/kitty/ ~/.config/
