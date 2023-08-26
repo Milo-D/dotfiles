@@ -81,10 +81,11 @@ sudo dnf install gdb
 sudo dnf install cmake
 sudo dnf install ncurses-devel
 
-########## install packages (security research) ##########
+########## install packages (binary stuff) ##########
 
 sudo dnf install patchelf
 sudo dnf install binwalk
+sudo dnf install rizin
 
 pip install ropper
 
@@ -92,10 +93,6 @@ cd ~/Desktop/Repositories/
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
-
-cd ~/Desktop/Repositories/
-git clone https://github.com/radareorg/radare2
-radare2/sys/install.sh
 
 cd ~
 
@@ -150,6 +147,10 @@ cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
 
 cd ~
+
+########## miscellaneous ##########
+
+sudo ln -s $(which rizin) /usr/bin/r2
 
 ####### Final Notes #######
 #
