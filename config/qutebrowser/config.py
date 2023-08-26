@@ -112,4 +112,5 @@ bind('<ctrl-shift-p>', 'open -p', 'normal');
 #
 # apply a theme from ~/.config/qutebrowser/themes/
 #
-config.source('themes/onedark.py');
+config.source('themes/nord.py');
+
