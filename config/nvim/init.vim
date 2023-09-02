@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'shaunsingh/nord.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 

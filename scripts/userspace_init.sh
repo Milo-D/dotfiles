@@ -55,6 +55,7 @@ sudo dnf install zip
 sudo dnf install tar
 sudo dnf install bat
 sudo dnf install neovim
+sudo dnf install ctags
 sudo dnf install screenfetch
 sudo dnf install wget
 sudo dnf install git
