@@ -49,6 +49,7 @@ pip install qtile
 sudo dnf install btop
 sudo dnf install kitty
 sudo dnf install qutebrowser
+sudo dnf install zathura
 sudo dnf install nitrogen
 sudo dnf install zip
 sudo dnf install tar
@@ -147,6 +148,7 @@ cp -r dotfiles/config/qutebrowser/ ~/.config/
 cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
 cp -r dotfiles/config/picom/ ~/.config/
+cp -r dotfiles/config/zathura/ ~/.config/
 
 cd ~
 
