@@ -346,3 +346,27 @@ c.colors.tabs.selected.odd.fg = nord['nord1']
 ## color)
 ## Type: QtColor
 # c.colors.webpage.bg = 'white'
+
+# ## Background color of disabled items in the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.disabled.bg = nord['nord3']
+
+# ## Foreground color of disabled items in the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.disabled.fg = nord['nord11']
+
+# ## Background color of the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.menu.bg = nord['nord3']
+
+# ## Foreground color of the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.menu.fg = nord['nord5']
+
+# ## Background color of selected items in the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.selected.bg = nord['nord8']
+
+# ## Foreground color of selected items in the 'right-click' context menu
+# ## Type: QtColor
+c.colors.contextmenu.selected.fg = nord['nord1']
