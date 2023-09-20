@@ -353,7 +353,8 @@ c.colors.contextmenu.disabled.bg = nord['nord3']
 
 # ## Foreground color of disabled items in the 'right-click' context menu
 # ## Type: QtColor
-c.colors.contextmenu.disabled.fg = nord['nord11']
+# note: we cheat here a little bit. Use 'nord11' to stay in nord colors
+c.colors.contextmenu.disabled.fg = '#707880'
 
 # ## Background color of the 'right-click' context menu
 # ## Type: QtColor
