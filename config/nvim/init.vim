@@ -25,6 +25,12 @@ colorscheme nord
 " open file in new tab
 nmap <C-L> :tabnew 
 
+" move tab to the left
+nmap <C-A-Left> :tabmove -1<CR>
+
+" move tab to the right
+nmap <C-A-Right> :tabmove +1<CR>
+
 " ===
 
 " lualine configuration
