@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #
 # personal userspace initialization script
@@ -34,62 +34,57 @@ mkdir Pictures
 mkdir Documents
 mkdir Downloads
 
-########## install qtile dependencies ##########
+########## install common packages ##########
 
-sudo dnf install @base-x
+sudo dnf -y install @base-x
 
-sudo dnf install python3-pip
-sudo dnf install python3-xcffib
-sudo dnf install python3-cairocffi
+sudo dnf -y install python3-pip
+sudo dnf -y install python3-xcffib
+sudo dnf -y install python3-cairocffi
+
+sudo dnf -y install btop
+sudo dnf -y install kitty
+sudo dnf -y install qutebrowser
+sudo dnf -y install zathura
+sudo dnf -y install nitrogen
+sudo dnf -y install zip
+sudo dnf -y install tar
+sudo dnf -y install bat
+sudo dnf -y install neovim
+sudo dnf -y install ctags
+sudo dnf -y install screenfetch
+sudo dnf -y install wget
+sudo dnf -y install git
+sudo dnf -y install ranger
+sudo dnf -y install qemu
+sudo dnf -y install tree
+sudo dnf -y install ImageMagick
+sudo dnf -y install NetworkManager-tui
+
+sudo dnf -y install picom
+sudo dnf -y install xclip
+sudo dnf -y install xsel
+sudo dnf -y install xrandr
+sudo dnf -y install polybar
+sudo dnf -y install rofi
+sudo dnf -y install i3lock
+sudo dnf -y install brightnessctl
+
+sudo dnf -y install gcc
+sudo dnf -y install gdb
+sudo dnf -y install cmake
+sudo dnf -y install ncurses-devel
+
+sudo dnf -y install patchelf
+sudo dnf -y install binwalk
+sudo dnf -y install rizin
+
+########## install common packages (pip) ##########
 
 pip install qtile
-
-########## install packages (core utilities) ##########
-
-sudo dnf install btop
-sudo dnf install kitty
-sudo dnf install qutebrowser
-sudo dnf install zathura
-sudo dnf install nitrogen
-sudo dnf install zip
-sudo dnf install tar
-sudo dnf install bat
-sudo dnf install neovim
-sudo dnf install ctags
-sudo dnf install screenfetch
-sudo dnf install wget
-sudo dnf install git
-sudo dnf install git-email
-sudo dnf install ranger
-sudo dnf install qemu
-sudo dnf install tree
-sudo dnf install ImageMagick
-
-########## install packages (window-manager stuff) ##########
-
-sudo dnf install picom
-sudo dnf install xclip
-sudo dnf install xsel
-sudo dnf install xrandr
-sudo dnf install polybar
-sudo dnf install rofi
-sudo dnf install i3lock
-sudo dnf install brightnessctl
-
-########## install packages (software development) ##########
-
-sudo dnf install gcc
-sudo dnf install gdb
-sudo dnf install cmake
-sudo dnf install ncurses-devel
-
-########## install packages (binary stuff) ##########
-
-sudo dnf install patchelf
-sudo dnf install binwalk
-sudo dnf install rizin
-
 pip install ropper
+
+########## install pwndbg ##########
 
 cd ~/Desktop/Repositories/
 git clone https://github.com/pwndbg/pwndbg
