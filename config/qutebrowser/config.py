@@ -43,7 +43,7 @@ c.fonts.default_family = "Jetbrains Mono";
 #
 # hints
 #
-# c.hints.chars = 'abcdef';
+c.hints.chars = 'w2lp';
 
 #
 # startpage
@@ -78,7 +78,7 @@ unbind('<ctrl-q>', 'normal');
 #
 unbind('<n>',                         'normal');
 unbind('<shift-n>',                   'normal');
-bind(  '<ctrl-f>',  'set-cmd-text /', 'normal');
+bind(  '<ctrl-f>',  'cmd-set-text /', 'normal');
 bind(  '<ctrl-n>',  'search-next',    'normal');
 bind(  '<ctrl-p>',  'search-prev',    'normal');
 
@@ -100,7 +100,7 @@ bind(  '<ctrl-r>', 'reload', 'normal');
 # open url prompt
 #
 unbind('o',                                      'normal');
-bind(  '<ctrl-l>', 'set-cmd-text --space :open', 'normal');
+bind(  '<ctrl-l>', 'cmd-set-text --space :open', 'normal');
 
 #
 # private browsing
