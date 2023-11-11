@@ -121,7 +121,7 @@ c.colors.hints.fg = nord['nord5']
 
 ## Color of hint border
 ## Type QssColor
-c.hints.border = "1px solid " + nord['nord13']
+c.hints.border = "2px solid " + nord['nord11']
 
 ## Font color for the matched part of hints.
 ## Type: QssColor
