@@ -71,7 +71,11 @@ c.colors.completion.item.selected.fg = nord['nord6']
 
 ## Foreground color of the matched text in the completion.
 ## Type: QssColor
-c.colors.completion.match.fg = nord['nord13']
+c.colors.completion.match.fg = nord['nord15']
+
+## Foreground color of the matched text in the selected completion item.
+## Type: QssColor
+c.colors.completion.item.selected.match.fg = nord['nord15']
 
 ## Color of the scrollbar in completion view
 ## Type: QssColor
