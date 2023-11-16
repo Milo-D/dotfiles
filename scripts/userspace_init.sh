@@ -129,6 +129,8 @@ cd Desktop/Scripts
 git clone https://github.com/Milo-D/dotfiles.git
 
 sudo cp dotfiles/misc/issue /etc/
+sudo cp dotfiles/misc/40-libinput.conf /usr/share/X11/xorg.conf.d/
+
 cp -r dotfiles/Wallpapers/ ~/Pictures/
 
 cp dotfiles/config/.bash_profile ~/
