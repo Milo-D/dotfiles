@@ -28,3 +28,17 @@ unset rc
 
 export EDITOR=nvim
 export BAT_THEME="Nord"
+
+### bash prompt ###
+
+branch() {
+
+    git_branch=$(git branch 2>/dev/null)
+
+    if [ $? -eq 0 ]; then
+        branch=$(echo "$git_branch" | grep '^*' | colrm 1 2)
+        echo " $branch"
+    fi
+}
+
+export PS1='[\u@\h \W$(branch)]\$ '
