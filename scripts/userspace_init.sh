@@ -42,6 +42,7 @@ sudo dnf -y install python3-pip
 sudo dnf -y install python3-xcffib
 sudo dnf -y install python3-cairocffi
 
+sudo dnf -y install fd-find
 sudo dnf -y install btop
 sudo dnf -y install kitty
 sudo dnf -y install qutebrowser
@@ -92,6 +93,10 @@ cd pwndbg
 ./setup.sh
 
 cd ~
+
+########## install hishtory ##########
+
+curl https://hishtory.dev/install.py | python3 -
 
 ########## install vim plugin manager ########## 
 
