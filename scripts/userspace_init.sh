@@ -75,6 +75,7 @@ sudo dnf -y install brightnessctl
 sudo dnf -y install gcc
 sudo dnf -y install gdb
 sudo dnf -y install cmake
+sudo dnf -y install valgrind
 sudo dnf -y install ncurses-devel
 
 sudo dnf -y install patchelf
