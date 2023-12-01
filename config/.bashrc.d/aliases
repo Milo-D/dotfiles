@@ -1,0 +1,2 @@
+alias valgrind='valgrind -v --leak-check=full --track-origins=yes'
+alias ls='exa'

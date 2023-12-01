@@ -42,6 +42,7 @@ sudo dnf -y install python3-pip
 sudo dnf -y install python3-xcffib
 sudo dnf -y install python3-cairocffi
 
+sudo dnf -y install exa
 sudo dnf -y install fd-find
 sudo dnf -y install btop
 sudo dnf -y install kitty
@@ -94,10 +95,6 @@ cd pwndbg
 
 cd ~
 
-########## install hishtory ##########
-
-curl https://hishtory.dev/install.py | python3 -
-
 ########## install vim plugin manager ########## 
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -143,6 +140,7 @@ cp dotfiles/config/.bashrc ~/
 cp dotfiles/config/.xinitrc ~/
 cp dotfiles/config/.rizinrc ~/
 
+cp -r dotfiles/config/.bashrc.d/ ~/
 cp -r dotfiles/config/qtile/ ~/.config/
 cp -r dotfiles/config/kitty/ ~/.config/
 cp -r dotfiles/config/nvim/ ~/.config/
