@@ -44,6 +44,8 @@ sudo dnf -y install python3-cairocffi
 
 sudo dnf -y install exa
 sudo dnf -y install fd-find
+sudo dnf -y install fzf
+sudo dnf -y install hstr
 sudo dnf -y install btop
 sudo dnf -y install kitty
 sudo dnf -y install qutebrowser
