@@ -28,7 +28,7 @@ unset rc
 
 ### bindings ###
 
-bind -x '"\C-l":nvim $(fzf)'
+bind -x '"\C-l":~/.config/fzf/dispatcher.py $(fzf --layout=reverse)'
 bind -x '"\C-k":clear'
 
 ### environment variables ###

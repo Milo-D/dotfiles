@@ -153,6 +153,7 @@ cp -r dotfiles/config/rofi/ ~/.config/
 cp -r dotfiles/config/btop/ ~/.config/
 cp -r dotfiles/config/picom/ ~/.config/
 cp -r dotfiles/config/zathura/ ~/.config/
+cp -r dotfiles/config/fzf/ ~/.config/
 
 cd ~
 
