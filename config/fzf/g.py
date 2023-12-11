@@ -21,7 +21,7 @@ if n_args == 2:
     request = sys.argv[2];
     flags   = sys.argv[1];
 
-search_cmd = f'''echo $(echo $(grep -nr{flags} {request} --color=always 2> /dev/null |
+search_cmd = f'''echo $(echo $(grep -nr{flags} "{request}" --color=always 2> /dev/null |
                  fzf --ansi --layout=reverse --border=bottom) | awk -F ":" '{{print $1 " " $2}}')''';
 
 #
