@@ -28,7 +28,11 @@ unset rc
 
 ### bindings ###
 
-bind -x '"\C-l":~/.config/fzf/dispatcher.py $(fzf --layout=reverse)'
+bind -x '"\C-l":~/.config/fzf/dispatcher.py $(fzf)'
+bind -x '"\202":~/.config/fzf/wd_ops.py cwd_save && cd $(find . -type d -print 2> /dev/null | fzf)'
+bind    '"\C-g":"\202\C-m"'
+bind -x '"\201":cd $(~/.config/fzf/wd_ops.py cwd_load $(echo $$))'
+bind    '"\C-h":"\201\C-m"'
 bind -x '"\C-k":clear'
 
 ### environment variables ###
@@ -50,27 +54,12 @@ branch() {
 
 export PS1='[\u@\h \W$(branch)]\$ '
 
-### bash history (hstr) ###
-
-alias hh=hstr                                                     # hh to be alias for hstr
-shopt -s histappend                                               # append new history items to .bash_history
-export HISTCONTROL=ignorespace:ignoredups                         # leading space hides commands from history
-export HISTFILESIZE=10000                                         # increase history file size (default is 500)
-export HISTSIZE=${HISTFILESIZE}                                   # increase history size (default is 500)
-export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}" # ensure synchronization between bash memory and history file
-
-function hstrnotiocsti {
-    { READLINE_LINE="$( { </dev/tty hstr ${READLINE_LINE}; } 2>&1 1>&3 3>&- )"; } 3>&1;
-    READLINE_POINT=${#READLINE_LINE}
-}
-
-if [[ $- =~ .*i.* ]]; then bind -x '"\C-r": "hstrnotiocsti"'; fi
-export HSTR_TIOCSTI=n
-
 ### fzf - fuzzy finder ###
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
     --color=fg:-1,bg:-1,hl:#81a1c1
-    --color=fg+:-1,bg+:-1,hl+:#81a1c1
+    --color=fg+:reverse:-1,bg+:-1,hl+:reverse:#81a1c1
     --color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac
-    --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
+    --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b
+    --layout=reverse
+    --border=bottom'
