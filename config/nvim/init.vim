@@ -7,6 +7,8 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
