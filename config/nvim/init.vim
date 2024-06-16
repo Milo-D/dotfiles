@@ -34,6 +34,10 @@ nmap <C-A-Left> :tabmove -1<CR>
 " move tab to the right
 nmap <C-A-Right> :tabmove +1<CR>
 
+" scroll line by line (C-e, C-y alternatives)
+nmap <C-S-Down> <C-e>
+nmap <C-S-Up> <C-y>
+
 " ===
 
 " lualine configuration
