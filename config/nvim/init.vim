@@ -12,6 +12,9 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
+" enable global clipboard
+set clipboard=unnamedplus
+
 " indentation settings
 set tabstop=4
 set shiftwidth=4
