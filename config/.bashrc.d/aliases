@@ -1,3 +1,4 @@
 alias valgrind='valgrind -v --leak-check=full --track-origins=yes'
 alias ls='exa'
 alias g='~/.config/fzf/g.py'
+alias clip='xsel -ib'
