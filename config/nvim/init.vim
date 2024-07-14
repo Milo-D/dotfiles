@@ -41,6 +41,10 @@ nmap <C-A-Right> :tabmove +1<CR>
 nmap <C-S-Down> <C-e>
 nmap <C-S-Up> <C-y>
 
+" scroll page by page (page up/down alternatives)
+nmap <C-S-PageDown> <PageDown>
+nmap <C-S-PageUp> <PageUp>
+
 " ===
 
 " lualine configuration
