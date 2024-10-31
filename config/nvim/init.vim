@@ -19,6 +19,9 @@ set clipboard=unnamedplus
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" formating
+set nowrap
+set formatoptions-=t
 
 " misc settings
 set number
